@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="snake-game.css" />
+    </head>
+    <body>
+        <div class="snake-game" id="snake-game" tabindex="1">
+            <div class="snake-game__content">
+                <div class="snake-game__matrix"></div>
+                <span class="snake-game__msg"></span>
+                <fieldset class="snake-game__config">
+                    <label>Set crawling step interval (ms)</label>
+                    <input type="number" class="snake-game__config-input">
+                    <button class="snake-game__button_start">Start</button>
+                </fieldset>
+
+                <span class="snake-game__snake-body-length-info">
+                    Body length:
+                    <span class="snake-game__snake-body-length-info-value">0</span>
+                </span>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script src="snake-game.js"></script>
+    </body>
+</html>
